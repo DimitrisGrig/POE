@@ -3,6 +3,7 @@
 </div>
 
 <br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # 🐛 Public Omics Explorer – Bug Reports
 
