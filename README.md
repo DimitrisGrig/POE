@@ -5,6 +5,14 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Open Issues](https://img.shields.io/github/issues-raw/DimitrisGrig/POE)
+
+![Frontend](https://img.shields.io/badge/frontend-React-blue)
+![Backend](https://img.shields.io/badge/backend-FastAPI-green)
+![Database](https://img.shields.io/badge/database-PostgreSQL-blue)
+![Docker](https://img.shields.io/badge/container-Docker-blue)
+
 
 # 🐛 Public Omics Explorer – Bug Reports
 
