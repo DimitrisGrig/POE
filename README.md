@@ -6,12 +6,18 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
+
 ![Open Issues](https://img.shields.io/github/issues-raw/DimitrisGrig/POE)
+![Closed Issues](https://img.shields.io/github/issues-closed/DimitrisGrig/POE)
+![Watchers](https://img.shields.io/github/watchers/DimitrisGrig/POE?style=social)
 
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-FastAPI-green)
 ![Database](https://img.shields.io/badge/database-PostgreSQL-blue)
 ![Docker](https://img.shields.io/badge/container-Docker-blue)
+
+![Data Coverage](https://img.shields.io/badge/geo--pubmed_coverage-77%25-purple)
+
 
 👉 **[Visit Public Omics Explorer](http://195.134.65.149:4000)**
 
