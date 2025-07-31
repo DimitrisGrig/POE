@@ -1,4 +1,5 @@
-# 🐛 Public Omics Explorer – Bug Reports
+# <img width="212" height="83" alt="image" src="https://github.com/user-attachments/assets/8aac7b58-7fd2-4a02-9062-1c24ea0abbb9" />
+ Public Omics Explorer – Bug Reports
 
 Welcome to the official bug tracking repository for **Public Omics Explorer (POE)**.
 
