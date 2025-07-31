@@ -13,6 +13,8 @@
 ![Database](https://img.shields.io/badge/database-PostgreSQL-blue)
 ![Docker](https://img.shields.io/badge/container-Docker-blue)
 
+👉 **[Visit Public Omics Explorer](http://195.134.65.149:4000)**
+
 
 # 🐛 Public Omics Explorer – Bug Reports
 
