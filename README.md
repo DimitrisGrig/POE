@@ -4,7 +4,7 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0-blue)
 ![Open Issues](https://img.shields.io/github/issues/DimitrisGrig/POE)
 ![Closed Issues](https://img.shields.io/github/issues-closed/DimitrisGrig/POE)
 ![Watchers](https://img.shields.io/github/watchers/DimitrisGrig/POE?style=social)
