@@ -1,7 +1,6 @@
 <div align="center">
   <img width="212" height="83" alt="Public Omics Explorer Logo" src="https://github.com/user-attachments/assets/8aac7b58-7fd2-4a02-9062-1c24ea0abbb9" />
 </div>
-
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -15,8 +14,7 @@
 ![Database](https://img.shields.io/badge/database-PostgreSQL-blue)
 ![Docker](https://img.shields.io/badge/container-Docker-blue)
 
-![Data Coverage](https://img.shields.io/badge/geo--pubmed_coverage-77%25-purple)
-
+---
 
 👉 **[Visit Public Omics Explorer](http://195.134.65.149:4000)**
 
@@ -62,6 +60,16 @@ If you encounter a problem, please open an issue and provide:
 Anyone using POE. Guest or registered users can report issues here.
 
 For help accessing the platform or API documentation, please visit the main POE app.
+
+---
+
+## 📬 Correspondence
+
+For any inquiries, please contact:
+
+- 📧 [jim.grigor@gmail.com](mailto:jim.grigor@gmail.com)
+- 📧 [pavlopoulos@fleming.gr](mailto:pavlopoulos@fleming.gr)
+- 📧 [perdikopanisnikos@gmail.com](mailto:perdikopanisnikos@gmail.com)
 
 ---
 
