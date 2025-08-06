@@ -151,3 +151,39 @@ This endpoint accepts free-text input and returns relevant articles based on int
 }
 ```
 
+### Example with python
+Here's how to authenticate and use the API from Python using therequests library:
+
+```python
+import requests
+import json
+
+api_url = "http://195.134.65.149:4001"
+
+# 1: Authenticate and get token
+login_url = f"{api_url}/login/token"
+login_data = {
+    "username": dgrigoriadis,
+    "password": "********" # Fill your password here
+}
+
+login_response = requests.post(login_url, data=login_data)
+token = login_response.json().get("access_token")
+
+# 2: Use token to access protected route
+headers = {
+    "Authorization": f"Bearer {token}"
+}
+
+# Example call to route search_pubmed_from_faiss
+search_url = f"{api_url}/public/search_by_article"
+payload = {
+    "searchType": "gse",
+    "query": "GSE303691",
+}
+
+response = requests.get(search_url, json=payload, headers=headers)
+
+print(response.status_code)
+print(json.dumps(response.json(), indent=2))
+```
