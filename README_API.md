@@ -125,9 +125,29 @@ This endpoint accepts free-text input and returns relevant articles based on int
 }
 ```
 
+#### Search for a GSE title with fuzzy matching:
 ```json
 {
     "searchType": "gseTitle",
     "query": "Lung cancer",
 }
 ```
+
+#### Search for a PubMed title with fuzzy matching:
+```json
+{
+    "searchType": "pubmed",
+    "query": "Pre-receptor regulation of 11-oxynd cancerous endometrium and across endometrial cancer grades and molecular subtypes",
+}
+```
+
+#### Search for a DOI:
+
+
+```json
+{
+    "searchType": "doi",
+    "query": "10.1016/j.ajt.2023.06.003"
+}
+```
+
