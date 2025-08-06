@@ -68,8 +68,7 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 - Results are returned based on semantic similarity to the query.
 
 ### Example with python
-Here's how to authenticate and use the API from Python using therequests library:
-
+##### Here's how to authenticate and use the API from Python using therequests library:
 ```python
 import requests
 import json
