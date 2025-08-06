@@ -64,6 +64,11 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 | `top_k`              | `integer`      | ✅        | Number of top results to return (e.g. `10`). Max: `10000`.                             |
 | `model`              | `string`       | ❌        | Embedding model to use: `BioBERT`, `S-BioBERT`, or `MiniLM`.<br>**Default**: `BioBERT` |
 
+💡 Notes
+- Filters are applied after retrieving top vectors using L2 distance.
+- query_text is the primary input and should be used like a smart PubMed search.
+- Results are returned based on semantic similarity to the query.
+
 python
 ```
 import requests
