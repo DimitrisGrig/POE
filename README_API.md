@@ -52,3 +52,15 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
     "model": 'BioBERT'
 }
 ```
+
+| Parameter            | Type           | Required | Description                                                                            |
+| -------------------- | -------------- | -------- | -------------------------------------------------------------------------------------- |
+| `query_text`         | `string`       | ✅        | Main search phrase (e.g. `"oxidative stress"`).                                        |
+| `date_query`         | `integer`      | ❌        | Filter by publication year (e.g. `2010`).                                              |
+| `organisms`          | `list[string]` | ❌        | E.g. `["Homo sapiens"]`.                                                               |
+| `library_strategy`   | `list[string]` | ❌        | E.g. `["RNA-Seq"]`.                                                                    |
+| `experiment_type`    | `list[string]` | ❌        | E.g. `["expression profiling by array"]`.                                              |
+| `extracted_molecule` | `list[string]` | ❌        | E.g. `["total RNA"]`.                                                                  |
+| `top_k`              | `integer`      | ✅        | Number of top results to return (e.g. `10`). Max: `10000`.                             |
+| `model`              | `string`       | ❌        | Embedding model to use: `BioBERT`, `S-BioBERT`, or `MiniLM`.<br>**Default**: `BioBERT` |
+
