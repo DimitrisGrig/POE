@@ -1,4 +1,4 @@
-# 🔬 Public API Usage Examples
+# Public API Usage Examples
 
 Below are examples of how to use the available API endpoints.
 
