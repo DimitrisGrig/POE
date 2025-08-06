@@ -230,3 +230,5 @@ if response.status_code == 200:
 else:
     print(f"❌ Failed to download. Status code: {response.status_code}")
 ```
+
+### If you experience issues, make sure your token is valid and not expired.
