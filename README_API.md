@@ -106,8 +106,8 @@ print(json.dumps(response.json(), indent=2))
 
 ---
 
-## 2. Search Scientific Article or GSE series
 
+## 2. Search Scientific Article or GSE series
 #### This endpoint accepts free-text input and returns relevant articles based on internal models.
 
 **GET** `http://195.134.65.149:4001/public/search_by_article`
@@ -228,4 +228,4 @@ else:
     print(f"❌ Failed to download. Status code: {response.status_code}")
 ```
 
-### If you experience issues, make sure your token is valid and not expired.
+###### If you experience issues, make sure your token is valid and not expired.
