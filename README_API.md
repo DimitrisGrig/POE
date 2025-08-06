@@ -1,34 +1,54 @@
-# 🔬 Public API Usage Guide
+# 🔬 Public API Usage Examples
 
-Welcome to the documentation for the **Public API**. This API allows authenticated users to:
+Below are examples of how to use the available API endpoints.
 
-- Perform semantic searches on PubMed articles.
-- Find scientific datasets (e.g., GSE series).
-- Download metadata as TSV.
-
-> ⚠️ **Authentication Required**  
-> All endpoints require a valid `Bearer Token` in the `Authorization` header.
+> ⚠️ All requests require a valid **Bearer Token** in the `Authorization` header.
 
 ---
 
-## 🔐 Authentication
+## ⚠️ Important Notes
 
-Before accessing any protected route, authenticate with:
+- 🔐 **Tokens expire after 24 hours**. It is recommended to request a new token with each API call.
+- 🐢 **Rate limit**: 1 request every **4 seconds**.
 
-```python
-import requests
+---
 
-api_url = "http://195.134.65.149:4001"
+## 📍 Endpoint: Search PubMed Using Semantic Search
 
-login_url = f"{api_url}/login/token"
-login_data = {
-    "username": "your_username",
-    "password": "your_password"
+Search PubMed abstracts based on **vector similarity** using **FAISS**.
+
+**GET** `http://195.134.65.149:4001/public/search_pubmed_from_faiss`
+
+---
+
+### 🔎 Request Body Examples
+
+#### 🧪 Search for oxidative stress (no extra filters)
+
+```json
+{
+  "query_text": "oxidative stress",
+  "date_query": null,
+  "organisms": [],
+  "library_strategy": [],
+  "experiment_type": [],
+  "extracted_molecule": [],
+  "top_k": 3,
+  "model": "BioBERT"
 }
+```
 
-response = requests.post(login_url, data=login_data)
-token = response.json().get("access_token")
+#### 🧪 Search for oxidative stress in Homo sapiens organism:
 
-headers = {
-    "Authorization": f"Bearer {token}"
+```json
+{
+    "query_text": "oxidative stress",
+    "date_query": None,
+    "organisms": ['Homo sapiens'],
+    "library_strategy": [],
+    "experiment_type": [],
+    "extracted_molecule": [],
+    "top_k": 3,
+    "model": 'BioBERT'
 }
+```
