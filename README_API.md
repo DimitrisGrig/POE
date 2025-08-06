@@ -193,3 +193,40 @@ print(json.dumps(response.json(), indent=2))
 
 **GET** `http://195.134.65.149:4001/public/download_metadata`
 
+```python
+import requests
+
+api_url = "http://195.134.65.149:4001"
+
+# 1. Authenticate and get token
+login_url = f"{api_url}/login/token"
+login_data = {
+    "username": "dgrigoriadis",
+    "password": "********" # Fill your password here
+}
+
+login_response = requests.post(login_url, data=login_data)
+token = login_response.json().get("access_token")
+
+# 2. Access protected route
+headers = {
+    "Authorization": f"Bearer {token}"
+}
+
+# 3. Download metadata file
+download_url = f"{api_url}/public/download_metadata"
+params = {"ena_project": "PRJNA940414"}
+
+response = requests.get(download_url, headers=headers, params=params)
+
+# 4. Save response to file if successful
+if response.status_code == 200:
+    output_file = f"{params.get('ena_project')}_metadata.tsv"
+    
+    with open(output_file, "wb") as f:
+        f.write(response.content)
+        
+    print(f"✅ Metadata downloaded and saved to {output_file}")
+else:
+    print(f"❌ Failed to download. Status code: {response.status_code}")
+```
