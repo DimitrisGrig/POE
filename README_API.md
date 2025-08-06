@@ -19,8 +19,6 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 
 **GET** `http://195.134.65.149:4001/public/search_pubmed_from_faiss`
 
----
-
 ### Request Body Examples
 
 #### Search for oxidative stress (no extra filters)
@@ -38,7 +36,7 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 }
 ```
 
-#### 🧪 Search for oxidative stress in Homo sapiens organism:
+#### Search for oxidative stress in Homo sapiens organism:
 
 ```json
 {
@@ -107,6 +105,8 @@ response = requests.get(search_url, json=payload, headers=headers)
 print(response.status_code)
 print(json.dumps(response.json(), indent=2))
 ```
+
+---
 
 ## 2. Search Scientific Article or GSE series
 
@@ -187,6 +187,8 @@ response = requests.get(search_url, json=payload, headers=headers)
 print(response.status_code)
 print(json.dumps(response.json(), indent=2))
 ```
+
+---
 
 ## 3. Download TSV file with data links
 #### Provide an ENA project ID (e.g., PRJNA940414) to retrieve a TSV file with associated metadata and file download links.
