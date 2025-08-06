@@ -69,8 +69,10 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 - query_text is the primary input and should be used like a smart PubMed search.
 - Results are returned based on semantic similarity to the query.
 
-python
-```
+### Example with python
+Here's how to authenticate and use the API from Python using therequests library:
+
+```python
 import requests
 import json
 
