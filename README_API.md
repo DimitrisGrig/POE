@@ -64,3 +64,39 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 | `top_k`              | `integer`      | ✅        | Number of top results to return (e.g. `10`). Max: `10000`.                             |
 | `model`              | `string`       | ❌        | Embedding model to use: `BioBERT`, `S-BioBERT`, or `MiniLM`.<br>**Default**: `BioBERT` |
 
+python
+```
+import requests
+import json
+
+api_url = "http://195.134.65.149:4001"
+
+# Step 1: Authenticate and get token
+login_url = f"{api_url}/login/token"
+login_data = {
+    "username": "your_username",
+    "password": "your_password"
+}
+
+login_response = requests.post(login_url, data=login_data)
+token = login_response.json().get("access_token")
+
+# Step 2: Use token to access protected route
+headers = {
+    "Authorization": f"Bearer {token}"
+}
+
+# Step 3: Call the semantic search endpoint
+search_url = f"{api_url}/public/search_pubmed_from_faiss"
+payload = {
+    "query_text": "oxidative stress",
+    "organisms": ["Homo sapiens"],
+    "top_k": 20,
+    "model": "BioBERT"
+}
+
+response = requests.get(search_url, json=payload, headers=headers)
+
+print(response.status_code)
+print(json.dumps(response.json(), indent=2))
+```
