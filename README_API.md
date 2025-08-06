@@ -21,7 +21,7 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 
 ### Request Body Examples
 
-#### Search for oxidative stress (no extra filters)
+##### Search for oxidative stress (no extra filters)
 
 ```json
 {
@@ -36,7 +36,7 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 }
 ```
 
-#### Search for oxidative stress in Homo sapiens organism:
+##### Search for oxidative stress in Homo sapiens organism:
 
 ```json
 {
