@@ -22,7 +22,6 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 ### Request Body Examples
 
 ##### Search for oxidative stress (no extra filters)
-
 ```json
 {
   "query_text": "oxidative stress",
@@ -37,7 +36,6 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 ```
 
 ##### Search for oxidative stress in Homo sapiens organism:
-
 ```json
 {
     "query_text": "oxidative stress",
@@ -109,14 +107,13 @@ print(json.dumps(response.json(), indent=2))
 
 ## 2. Search Scientific Article or GSE series
 
-This endpoint accepts free-text input and returns relevant articles based on internal models.
+#### This endpoint accepts free-text input and returns relevant articles based on internal models.
 
 **GET** `http://195.134.65.149:4001/public/search_by_article`
 
 ### Request Body Examples
 
 #### Search for a GSE series.You can enter multiple values separated by commas.
-
 ```json
 {
     "searchType": "gse",
@@ -141,8 +138,6 @@ This endpoint accepts free-text input and returns relevant articles based on int
 ```
 
 #### Search for a DOI:
-
-
 ```json
 {
     "searchType": "doi",
