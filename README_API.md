@@ -49,6 +49,7 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 }
 ```
 
+##### Request Body Parameters:
 | Parameter            | Type           | Required | Description                                                                            |
 | -------------------- | -------------- | -------- | -------------------------------------------------------------------------------------- |
 | `query_text`         | `string`       | ✅        | Main search phrase (e.g. `"oxidative stress"`).                                        |
