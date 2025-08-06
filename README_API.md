@@ -21,9 +21,9 @@ Search PubMed abstracts based on **vector similarity** using **FAISS**.
 
 ---
 
-### 🔎 Request Body Examples
+### Request Body Examples
 
-#### 🧪 Search for oxidative stress (no extra filters)
+#### Search for oxidative stress (no extra filters)
 
 ```json
 {
@@ -113,3 +113,21 @@ print(json.dumps(response.json(), indent=2))
 This endpoint accepts free-text input and returns relevant articles based on internal models.
 
 **GET** `http://195.134.65.149:4001/public/search_by_article`
+
+### Request Body Examples
+
+#### Search for a GSE series.You can enter multiple values separated by commas.
+
+```json
+{
+    "searchType": "gse",
+    "query": "GSE12234, GSE2856",
+}
+```
+
+```json
+{
+    "searchType": "gseTitle",
+    "query": "Lung cancer",
+}
+```
