@@ -13,7 +13,7 @@ Below are examples of how to use the available API endpoints.
 
 ---
 
-## 📍 Endpoint: Search PubMed Using Semantic Search
+## 1. Search PubMed using semantic search
 
 Search PubMed abstracts based on **vector similarity** using **FAISS**.
 
@@ -107,3 +107,9 @@ response = requests.get(search_url, json=payload, headers=headers)
 print(response.status_code)
 print(json.dumps(response.json(), indent=2))
 ```
+
+## 2. Search Scientific Article or GSE series
+
+This endpoint accepts free-text input and returns relevant articles based on internal models.
+
+**GET** `http://195.134.65.149:4001/public/search_by_article`
