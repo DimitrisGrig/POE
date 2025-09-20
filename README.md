@@ -73,6 +73,13 @@ For any inquiries, please contact:
 
 ---
 
+## 📡 Status
+[![Uptime Status](https://img.shields.io/badge/Status-Online-brightgreen)](https://stats.uptimerobot.com/jU5HkqTu1E)
+
+👉 [Check live system status here](https://stats.uptimerobot.com/jU5HkqTu1E)
+
+---
+
 ## 🙏 Please Cite Us
 
 If you use POE in your research, please cite:
