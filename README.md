@@ -80,6 +80,18 @@ For any inquiries, please contact:
 
 ---
 
+### 🔬 Reproducing SBioBERT Semantic Search Results
+
+To ensure reproducibility, we provide the Python script [`reproduce_sbiobert_distance.py`](./reproduce_sbiobert_distance.py), which replicates the semantic search results presented in our study.  
+This script takes a **title**, **abstract**, and **user query** as input, generates **SBioBERT embeddings**, and computes the **L2 distance** between the query and document embeddings.  
+You can run it to reproduce our semantic similarity results and explore the underlying search pipeline.
+
+```bash
+python reproduce_sbiobert_distance.py --title "Sample title" --abstract "Sample abstract" --query "Your query text"
+```
+---
+
+
 ## 🙏 Please Cite Us
 
 If you use POE in your research, please cite:
