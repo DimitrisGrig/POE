@@ -96,3 +96,4 @@ python reproduce_sbiobert_distance.py --title "Sample title" --abstract "Sample 
 
 If you use POE in your research, please cite:
 
+Grigoriadis, D., Tsifintaris, M., Giannakakis, A., Pavlopoulos, G. A., & Perdikopanis, N. (2025). **Public Omics Explorer (POE): Enabling integrative semantic search across GEO omics datasets based on PubMed publications.** Computational and Structural Biotechnology Journal.
